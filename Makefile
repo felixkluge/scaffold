@@ -17,5 +17,8 @@ lint:
 test:
 	source ~/.scaffold/bin/activate &&\
 	python3 -m pytest -vv --cov=hello test_hello.py
+
+hello:
+	python3 hello.py
 	
 all: install lint test
